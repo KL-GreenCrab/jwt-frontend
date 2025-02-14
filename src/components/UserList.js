@@ -6,7 +6,7 @@ import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow, Paper
 
 const UserList = () => {
     const [userList, setUserList] = useState([]);
-    const [error, setError] = useState('');
+    const [ setError] = useState('');
 
     useEffect(() => {
         const fetchUserList = async () => {

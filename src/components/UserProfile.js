@@ -4,7 +4,7 @@ import { Container, Typography, CircularProgress, Card, CardContent, CardActions
 
 const UserProfile = () => {
     const [userInfo, setUserInfo] = useState(null);
-    const [error, setError] = useState('');
+    const [ setError] = useState('');
 
     useEffect(() => {
         const fetchUserProfile = async () => {
@@ -30,8 +30,6 @@ const UserProfile = () => {
         );
     }
 
-    // Xử lý hiển thị roles nếu roles không phải mảng
-    const rolesDisplay = Array.isArray(userInfo.roles) ? userInfo.roles.join(', ') : 'N/A';
 
     return (
         <Container maxWidth="md" style={{ marginTop: '30px', padding: '20px' }}>

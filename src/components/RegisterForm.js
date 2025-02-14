@@ -23,7 +23,6 @@ const RegisterForm = () => {
         }
 
         try {
-            const response = await userService.registerUser({ name, email, password });
             setMessage('Registration successful');
             navigate('/login');
         } catch (err) {

@@ -4,7 +4,7 @@ import axios from 'axios';
 
 export const authService = {
     async authenticateAndGetToken(username, password) {
-        const response = await axios.post('http://localhost:8080/auth/generateToken', { username, password });
+        const response = await axios.post('https://jwt-be-latestation.onrender.com/auth/generateToken', { username, password });
         return response.data;
     }
 };
